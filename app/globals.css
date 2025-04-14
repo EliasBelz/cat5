@@ -58,3 +58,20 @@ p, pre {
 .no-scroll-bar::-webkit-scrollbar {
   display: none;
 }
+
+/* Video background styling */
+.video-background {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile video cropping */
+@media (max-width: 768px) {
+  .video-background {
+    object-position: center;
+    object-fit: cover;
+    transform: scale(1.0);
+    transform-origin: center;
+  }
+}

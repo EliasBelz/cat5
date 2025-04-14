@@ -15,7 +15,6 @@ const SplashScreen: React.FC<SplashScreenProps> =  ({ children }) => {
   const pathname = path[path.length - 1];
   let prevPathname = pathname;
 
-
   useEffect(() => {
     if ("" === prevPathname) return;
 
@@ -59,10 +58,19 @@ const SplashScreen: React.FC<SplashScreenProps> =  ({ children }) => {
 
   return (
     <div key={pathname} className="flex flex-col flex-grow h-full">
-      <article className={`px-10 fixed inset-0 flex items-center justify-center bg-custom-radial z-50 ziggle ${visible ? '' : 'hidden'}`}>
-         <div className="splash-img">
-            <SplashImage slug={pathname}/>
-         </div>
+      <article className={`px-10 fixed inset-0 flex items-center justify-center z-50 ziggle ${visible ? '' : 'hidden'}`}>
+        <video
+          className="absolute inset-0 w-full h-full object-cover video-background"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/miami-night.mp4" type="video/mp4" />
+        </video>
+        <div className="splash-img relative z-10">
+          <SplashImage slug={pathname}/>
+        </div>
       </article>
       {!visible && children}
     </div>

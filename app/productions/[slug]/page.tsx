@@ -17,7 +17,7 @@ export default async function Page(props: { params: Params }) {
 
   const videoIframe = trailer ? (
     <iframe
-      className="border-4 border-[#c45803] p-2 aspect-video w-[90vw] max-w-[800px] mx-auto"
+      className=" p-2 aspect-video w-[90vw] max-w-[800px] mx-auto"
       src={trailer}
       title="YouTube video player"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -27,7 +27,7 @@ export default async function Page(props: { params: Params }) {
   console.log('CLICK', slug);
 
   return (
-    <section id="md" className="h-full bg-orange-100 mb-10">
+    <section id="md" className="h-full mb-10">
       <div className="flex flex-col flex-wrap max-w-full">
         <div className="h-fit mx-4 flex content-center justify-center m-4 pt-4 max-w-full ">
           <img
