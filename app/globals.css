@@ -4,9 +4,10 @@
 
 :root {
   --secondary: #0a0814;
-  --background: #82cbcb;
+  /* --background: #82cbcb; */
+  --background: #0a0814;
   --foreground: rgb(244,50,207);
-  --text: #000000;
+  --text: #FFFF;
   --accent: rgb(219 39 119);
   --swiper-navigation-sides-offset: 0px;
   --swiper-navigation-color :#49162b ;
