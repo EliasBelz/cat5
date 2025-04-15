@@ -63,15 +63,15 @@ const CoverFlow: React.FC<CoverFlowProps> = ({ slides, onSlideChange }) => {
             </SwiperSlide>
           ))}
       </Swiper>
-      <div className="w-full flex justify-center gap-2 pt-3 text-black">
+      <div className="w-full flex justify-center gap-2 pt-3 text-white">
         <button
-          className="video-prev p-1 pr-4 rounded-md hover:scale-110 hover:text-secondary"
+          className="video-prev p-1 pr-4 rounded-md hover:scale-110"
           onClick={() => setPlaying(false)}
         >
           <GrPrevious size={30} />
         </button>
         <button
-          className="video-next p-1 pl-4 rounded-md hover:scale-110 hover:text-secondary"
+          className="video-next p-1 pl-4 rounded-md hover:scale-110"
           onClick={() => setPlaying(false)}
         >
           <GrNext size={30} />

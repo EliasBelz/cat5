@@ -8,7 +8,7 @@ export default async function Home() {
   const productions = await getPosts('productions');
   return (
     <div className="flex flex-col items-center justify-center">
-      <h1 className="pt-24 text-5xl font-bolds w-full mx-auto text-center">CAT5 Content</h1>
+      <h1 className="pt-20 pb-10 text-5xl font-bolds w-full mx-auto text-center">CAT5 Content</h1>
       <div className='flex flex-col flex-wrap max-w-full mx-auto px-8 lg:px-[20%] pt-4 pb-4'>
         {/* image from pngtree.com */}
         <Image
