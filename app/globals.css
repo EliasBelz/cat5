@@ -39,12 +39,27 @@ body {
   }
 }
 
-h1, h2, h3, h4 {
-  @apply font-goldman
+
+.glow {
+  text-shadow: 3px 5px 0px #00000059;
+  filter: drop-shadow(0 0 30px magenta);
 }
+
+
+/* #title { */
+  /* position: absolute; */
+  /* font-size: 3.5em; */
+  /* transform: rotate(-9deg); */
+  /* z-index: 10; */
+/* } */
+
 
 p, pre {
   @apply font-out
+}
+
+h1, h2, h3, h4 {
+  @apply font-goldman
 }
 
 .secondary {

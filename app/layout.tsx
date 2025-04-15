@@ -8,7 +8,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/next';
 import InfiniteBanner from "@/components/InfiniteBanner";
 
-
 export const metadata: Metadata = {
   title: "Cat5 Content",
   description: "Everything you want to know about Cat5 Content.",
@@ -40,7 +39,6 @@ export const metadata: Metadata = {
 const aleo = Aleo({weight: "400", subsets: ["latin"], variable: "--font-aleo"})
 
 const anybody = Manrope({weight: "700", subsets: ["latin"], variable: "--font-anybody"})
-
 
 // New font additions
 const audiowide = Audiowide({
