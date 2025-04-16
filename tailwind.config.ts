@@ -27,16 +27,17 @@ export default {
         'custom-radial': 'radial-gradient(circle, var(--foreground) 0%, #000000 100%)',
       },
       animation: {
-        shine: 'shine 3s infinite linear',
-        pause: 'pause 1s infinite linear',
+        shine: 'shine 10s infinite linear',
+        pause: 'pause 3s infinite linear',
       },
       keyframes: {
         shine: {
           '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
         },
         pause: {
           '0%, 100%': { opacity: '1' },
-          '50%': { opacity: ' 0.5' },
+          '50%': { opacity: '0.5' },
         },
       },
     },

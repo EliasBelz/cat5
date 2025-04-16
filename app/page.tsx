@@ -10,10 +10,9 @@ export default async function Home() {
     <div className="flex flex-col items-center justify-center">
       <div className='flex flex-col flex-wrap max-w-full mx-auto px-8 lg:px-[20%] pt-4 pb-4'>
         {/* image from pngtree.com */}
-        <div className="relative">
+        <div className="relative max-w-full mx-auto">
             <h1
-
-              className="pt-10 pr-36 font-bold w-full mx-auto text-center -rotate-12 z-10 relative text-[4.5em] filter glow shake"
+              className="pt-10 pr-36 font-bold w-full mx-auto text-center -rotate-12 z-10 relative text-[3em] md:text-[4.5em] filter glow shake"
             >
             CAT5 Content
             </h1>
@@ -23,7 +22,7 @@ export default async function Home() {
               alt="miami sunset - image from pngtree.com"
               width={470}
               height={470}
-              className="mx-auto"
+              className="mx-auto max-w-full"
             />
           </div>
           <p className="text-md md:text-lg lg:text-lg pt-7 pb-14 text-center">

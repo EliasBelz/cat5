@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Card: React.FC<PostMetadata> = ({ title,  release, poster, slug }) => {
   return (
     <Link href={`/productions/${slug}`}>
-      <div className="bg-gradient-to-br from-pink-400 via-purple-500 to-cyan-400 h-full w-80 p-2 rounded-sm shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:from-cyan-400 hover:via-purple-500 hover:to-pink-400 max-w-fit flex flex-col justify-between items-center text-xg font-semibold relative overflow-hidden before:absolute before:inset-0 before:bg-[linear-gradient(115deg,transparent_30%,rgba(255,255,255,0.4)_40%,rgba(255,255,255,0.2)_50%,transparent_70%)] before:z-0 before:animate-shine">
+      <div className="bg-gradient-to-br from-pink-400 via-purple-500 to-cyan-400 h-full w-80 p-2 rounded-sm shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:from-cyan-400 hover:via-purple-500 hover:to-pink-400 max-w-fit flex flex-col justify-between items-center text-xg font-semibold relative overflow-hidden before:absolute before:inset-0 before:bg-[linear-gradient(115deg,transparent_30%,rgba(255,255,255,0.4)_40%,rgba(255,255,255,0.2)_50%,transparent_70%)] before:z-0 before:animate-shine before:opacity-100 before:transition-opacity before:duration-500">
         <Image
           src={poster}
           alt={title}
