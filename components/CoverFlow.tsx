@@ -19,31 +19,39 @@ const CoverFlow: React.FC<CoverFlowProps> = ({ slides, onSlideChange }) => {
   return (
     <div>
       <Swiper
-        breakpoints={{
-          0: {
-            // For mobile devices, remove rotation
-            slidesPerView: 3,
-            coverflowEffect: {
-              slideShadows: false,
-              rotate: 0,
-              stretch: 0,
-              depth: 10,
-              scale: 0.9,
-            },
-          },
-          640: {
-            slidesPerView: 3,
-            coverflowEffect: {
-              slideShadows: false,
-              rotate: 35,
-              stretch: 0,
-              depth: 10,
-              scale: 0.9,
-            },
-          },
+        // breakpoints={{
+        //   0: {
+        //     // For mobile devices, remove rotation
+        //     slidesPerView: 3,
+        //     coverflowEffect: {
+        //       slideShadows: false,
+        //       rotate: 0,
+        //       stretch: 0,
+        //       depth: 10,
+        //       scale: 0.9,
+        //     },
+        //   },
+        //   640: {
+        //     slidesPerView: 3,
+        //     coverflowEffect: {
+        //       slideShadows: false,
+        //       rotate: 35,
+        //       stretch: 0,
+        //       depth: 10,
+        //       scale: 0.9,
+        //     },
+        //   },
+        // }}
+        slidesPerView={3}
+        coverflowEffect={{
+          slideShadows: false,
+          rotate: 0,
+          stretch: 0,
+          depth: 10,
+          scale: 0.9,
         }}
         centeredSlides={true}
-        spaceBetween={-22}
+        spaceBetween={-10}
         centeredSlidesBounds={true}
         effect="coverflow"
         navigation = {{nextEl: '.video-next', prevEl: '.video-prev'}}

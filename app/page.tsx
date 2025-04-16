@@ -13,7 +13,7 @@ export default async function Home() {
         <div className="relative max-w-full mx-auto">
           <div className="group -rotate-12 z-20 relative">
             <h1
-              className="pt-10 pr-10 font-bold w-full mx-auto text-center text-[2.45em] sm:text-[4.5em] filter glow animate-pulseTitle"
+              className="pt-10 pr-10 sm:pr-32 font-bold w-full mx-auto text-center text-[2.45em] sm:text-[4.5em] filter glow animate-pulseTitle"
             >
               CAT5 Content
             </h1>

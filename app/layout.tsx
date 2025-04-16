@@ -95,16 +95,18 @@ export default function RootLayout({
       <body className={`no-scroll-bar bg-secondary min-h-screen flex flex-col ${aleo.variable} ${anybody.variable} ${audiowide.variable} ${goldman.variable} ${genos.variable} ${unlock.variable} ${rubikGlitch.variable} ${trainOne.variable} ${monoton.variable}`}>
         <div className="flex flex-col flex-grow h-full">
           <SplashScreen>
-            <div className="w-full bg-secondary">
-              <InfiniteBanner />
+            <div className="w-full bg-secondary border-y-2 border-foreground">
+              <InfiniteBanner reversed={true} />
             </div>
             <div className="flex-grow bg-background pb-10">
               {children}
               <Analytics />
               <SpeedInsights />
             </div>
-            <div className="w-full bg-secondary">
-              <InfiniteBanner reversed={true}/>
+            <div className="w-full bg-secondary ">
+            <div className="w-full bg-secondary border-y-2 border-foreground">
+              <InfiniteBanner />
+            </div>
             <Footer />
             </div>
           </SplashScreen>

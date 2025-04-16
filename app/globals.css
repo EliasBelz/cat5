@@ -54,6 +54,12 @@ body {
   overflow: visible;
 }
 
+.glow-pink-blue-subtle {
+  filter: drop-shadow(0 -50px 40px #ff69b420) drop-shadow(0 50px 50px #00caff25);
+  will-change: filter;
+  overflow: visible;
+  }
+
 
 /* #title { */
   /* position: absolute; */
