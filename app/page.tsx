@@ -22,7 +22,7 @@ export default async function Home() {
               alt="miami sunset - image from pngtree.com"
               width={470}
               height={470}
-              className="mx-auto max-w-full"
+              className="mx-auto max-w-full glow-pink-blue"
             />
           </div>
           <p className="text-md md:text-lg lg:text-lg pt-7 pb-14 text-center">

@@ -33,7 +33,7 @@ export default async function Page(props: { params: Params }) {
           <img
             src={pc.logo || pc.poster}
             alt={`${pc.title} logo`}
-            className="px-1 max-w-[90vw] max-h-[90vw] md:max-w-[600px] md:max-h-[600px] lg:max-w-[600px]"
+            className="px-1 max-w-[90vw] max-h-[90vw] md:max-w-[600px] md:max-h-[600px] lg:max-w-[600px] glow-pink-blue"
           />
         </div>
         <p className="text-center text-lg font-semibold">
