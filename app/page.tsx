@@ -11,12 +11,14 @@ export default async function Home() {
       <div className='flex flex-col flex-wrap max-w-full mx-auto px-8 lg:px-[20%] pt-4 pb-4'>
         {/* image from pngtree.com */}
         <div className="relative max-w-full mx-auto">
+          <div className="group -rotate-12 z-20 relative">
             <h1
-              className="pt-10 pr-36 font-bold w-full mx-auto text-center -rotate-12 z-10 relative text-[3em] md:text-[4.5em] filter glow shake"
+              className="pt-10 pr-36 font-bold w-full mx-auto text-center text-[3em] md:text-[4.5em] filter glow animate-pulseTitle"
             >
-            CAT5 Content
+              CAT5 Content
             </h1>
-          <div className="relative mt-[-75px] z-0">
+          </div>
+          <div className="relative mt-[-75px] z-10">
             <Image
               src="/sunset.png"
               alt="miami sunset - image from pngtree.com"

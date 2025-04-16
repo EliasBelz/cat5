@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -14,8 +15,9 @@ const Footer: React.FC = () => {
         </a>
       </div> */}
       <p className='pt-2 text-center'>
-        © Cat5 Content 2025. All rights reserved.
+        © Cat5 Content 2025.
       </p>
+      <Link href="/" className="text-sm underline mt-2">Home</Link>
       {/* <div className="w-full flex justify-center items-center space-x-6">
         <a href="https://www.instagram.com/pointgrey/" target="_blank" rel="noopener noreferrer" className="hover:text-orange-100 w-8 h-8 flex justify-center items-center visited:text-orange-100">
           <FontAwesomeIcon icon={faInstagram} size="2x" />

@@ -29,6 +29,7 @@ export default {
       animation: {
         shine: 'shine 10s infinite linear',
         pause: 'pause 3s infinite linear',
+        pulseTitle: 'pulseTitle 3s infinite ease-in-out',
       },
       keyframes: {
         shine: {
@@ -38,6 +39,10 @@ export default {
         pause: {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0.5' },
+        },
+        pulseTitle: {
+          '0%, 100%': { transform: 'scale(1.05)', opacity: '1' },
+          '50%': { transform: 'scale(1.0)', opacity: '0.95' },
         },
       },
     },
