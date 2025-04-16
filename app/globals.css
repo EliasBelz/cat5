@@ -45,7 +45,6 @@ body {
   filter: drop-shadow(0 0 30px magenta);
   will-change: filter;
   overflow: visible;
-  transform: translateZ(0);
 }
 
 
@@ -53,7 +52,6 @@ body {
   filter: drop-shadow(0 -100px 80px #ff69b440) drop-shadow(0 100px 100px #00caff45);
   will-change: filter;
   overflow: visible;
-  transform: translateZ(0);
 }
 
 
