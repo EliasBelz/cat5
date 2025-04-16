@@ -3,7 +3,6 @@ import Markdown from "markdown-to-jsx";
 import React from "react";
 import "../../productions.css";
 import { getPost, PostMetadata } from "@/utils/getMetaData";
-import Divider from "@/components/Divider";
 
 type Params = Promise<{ slug: string }>;
 export default async function Page(props: { params: Params }) {
