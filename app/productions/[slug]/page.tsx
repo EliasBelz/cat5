@@ -39,9 +39,6 @@ export default async function Page(props: { params: Params }) {
         <p className="text-center text-lg font-semibold">
           {releaseDate.toLocaleDateString()}
         </p>
-        <div className="pt-2 pb-4">
-          <Divider />
-        </div>
         {videoIframe && (
           <div className="flex justify-center pt-4 px-4 w-full">
             <div className="border-4 border-[#BF1847] p-2 flex-grow-0">
